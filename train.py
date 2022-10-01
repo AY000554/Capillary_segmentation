@@ -1,7 +1,6 @@
 import tensorflow as tf
 from tensorflow import keras as K
 from tensorflow.keras.optimizers import Adam
-import tensorflow_addons as tfa
 from datetime import datetime
 import os
 import numpy as np
