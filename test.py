@@ -1,16 +1,15 @@
+from tensorflow.keras.optimizers import Adam
+from tensorflow import keras as K
 from datetime import datetime
-import os
 import numpy as np
+import os
 import cv2
 import time
 
-from Data_generator import DataGenerator, split_data
-from build_model import build_model
-from tensorflow.keras.optimizers import Adam
-import tensorflow_addons as tfa
-from tensorflow import keras as K
 from Metrics import *
+from build_model import build_model
 from Loss import Mix_loss_dice_and_CCE
+from Data_generator import DataGenerator, split_data
 
 os.environ["CUDA_DEVICE_ORDER"]='PCI_BUS_ID'
 os.environ["CUDA_VISIBLE_DEVICES"]='0'
